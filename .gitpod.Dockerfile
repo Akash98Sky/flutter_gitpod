@@ -21,10 +21,10 @@ RUN cd /home/gitpod \
     && curl https://storage.googleapis.com/flutter_infra/releases/releases_linux.json > flutter_releases_linux.json \
     && base_url=`jq -r .base_url flutter_releases_linux.json` \
     && release_hash=`jq .current_release.$FLUTTER_CHANNEL flutter_releases_linux.json` \
-    && release_archive=`jq -r ".releases[] | select(.hash == $release_hash) | .archive" flutter_releases_linux.json` \
+    && release_archive=`jq -r ".releases[] | select(.hash == $release_hash and .channel == \"$FLUTTER_CHANNEL\") | .archive" flutter_releases_linux.json` \
     && rm flutter_releases_linux.json \
     && wget -O flutter_sdk.tar.xz $base_url/$release_archive \
     && tar -xvf flutter_sdk.tar.xz && rm flutter_sdk.tar.xz \
     && $FLUTTER_HOME/bin/flutter config --enable-web \
     && echo "export PATH=$FLUTTER_HOME/bin:\$PATH" >> .bashrc;
- 
+    
