@@ -4,4 +4,4 @@
 
 A complete setup for running flutter and dart on [gitpod.io](https://gitpod.io)
 
-![](https://github.com/Akash98Sky/flutter_gitpod/raw/master/Flutter_Gitpod_Dart.png)
+![Flutter+Gitpod+Dart](./Flutter+Gitpod+Dart.png)
