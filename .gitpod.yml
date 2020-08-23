@@ -2,6 +2,16 @@ vscode:
   extensions:
     - Dart-Code.flutter@3.13.2:Eu9AIooF0l9SZOqPOxXFHQ==
     - Dart-Code.dart-code@3.13.2:VctB/eBxSv/owCFRO3X0fA==
+    - FelixAngelov.bloc@5.2.0:rc/uHYmS7nY+mAQXw9cpPA==
+    - usernamehw.errorlens@3.1.1:E43ZI7EpaYPnQJQM1+2bZw==
+    - PKief.material-icon-theme@4.2.0:BMxWnfsRyjgBONLuFiMF4g==
+    - pflannery.vscode-versionlens@1.0.8:oKj6qejw3b092PPtUeOAJA==
+
+    - alexisvt.flutter-snippets@2.0.0:IZ1TjU5xgx/l/7naPOooFA==
+    - Zaraclaj.flutter-provider-snippets@1.5.0:dy+BD7uh97eUzDW5+jxbCA==
+    - Nash.awesome-flutter-snippets@2.0.4:2i3WRHUh2vvl9JsYNk006Q==
+    - jeroen-meijer.pubspec-assist@2.0.0:W08RsWPGpmgyn/GV56mu0Q==
+
 
 image:
   file: .gitpod.Dockerfile
